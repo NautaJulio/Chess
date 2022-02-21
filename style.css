@@ -1,0 +1,80 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  height: 100vh;
+  width: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96%;
+  width: 98%;
+  padding: 1%;
+}
+
+.Game {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  background-color: rgb(114, 255, 58);
+}
+
+.PieceWK {
+  order: 0;
+}
+
+.PieceWQ {
+  order: 0;
+}
+
+.PieceWB {
+  order: 0;
+}
+
+.PieceWH {
+  order: 0;
+}
+
+.PieceWT {
+  order: 0;
+}
+
+.PieceWP {
+  order: 0;
+}
+
+.PieceWK {
+  order: 0;
+}
+
+.PieceBQ {
+  order: 0;
+}
+
+.PieceBB {
+  order: 0;
+}
+
+.PieceBH {
+  order: 0;
+}
+
+.PieceBT {
+  order: 0;
+}
+
+.PieceBP {
+  order: 0;
+}
+
+.Black{
+  background-color: aliceblue;
+}

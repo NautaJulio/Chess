@@ -25,266 +25,53 @@ main {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
   background-color: rgb(114, 255, 58);
+  
 }
 
-.PieceWK {
-  order: 4;
-}
-
-.PieceWQ {
-  order: 5;
-}
-
-.PieceWB1 {
-  order: 3;
-}
-
-.PieceWB2 {
-  order: 6;
-}
-
-.PieceWH1 {
-  order: 2;
-}
-
-.PieceWH2 {
-  order: 7;
-}
-
-.PieceWT1 {
-  order: 1;
-}
-
-.PieceWT2 {
-  order: 8;
-}
-
-
-.PieceWP1 {
-  order: 9;
-}
-
-.PieceWP2 {
-  order: 10;
-}
-
-.PieceWP3 {
-  order: 11;
-}
-
-.PieceWP4 {
-  order: 12;
-}
-
-.PieceWP5 {
-  order: 13;
-}
-
-.PieceWP6 {
-  order: 14;
-}
-
-.PieceWP7 {
-  order: 15;
-}
-
-.PieceWP8 {
-  order: 16;
-}
-
-.Space1{
-  order: 17;
-}
-
-.Space2{
-  order: 18;
-}
-
-.Space3{
-  order: 19;
-}
-
-.Space4{
-  order: 20;
-}
-
-.Space5{
-  order: 21;
-}
-
-.Space6{
-  order: 22;
-}
-
-.Space7{
-  order: 23;
-}
-
-.Space8{
-  order: 24;
-}
+.WPeasant{
 
-.Space9{
-  order: 25;
 }
 
-.Space10{
-  order: 26;
-}
-
-.Space11{
-  order: 27;
-}
-
-.Space12{
-  order: 28;
-}
-
-.Space13{
-  order: 29;
-}
-
-.Space14{
-  order: 30;
-}
-
-.Space15{
-  order: 31;
-}
-
-.Space16{
-  order: 32;
-}
-
-.Space17{
-  order: 33;
-}
-
-.Space18{
-  order: 34;
-}
-
-.Space19{
-  order: 35;
-}
-
-.Space20{
-  order: 36;
-}
-
-.Space21{
-  order: 37;
-}
-
-.Space22{
-  order: 38;
-}
-
-.Space23{
-  order: 39;
-}
-
-.Space24{
-  order: 40;
-}
-
-.Space25{
-  order: 41;
-}
-
-.Space26{
-  order: 42;
-}
-
-.Space27{
-  order: 43;
-}
-
-.Space28{
-  order: 44;
-}
-
-.Space29{
-  order: 45;
-}
+.BPeasant{
 
-.Space30{
-  order: 46;
 }
 
-.Space31{
-  order: 47;
-}
+.WBishop{
 
-.Space32{
-  order: 48;
 }
 
-.PieceBQ {
-  order: 60;
-}
+.BBishop{
 
-.PieceBK {
-  order: 61;
 }
 
-.PieceBB1 {
-  order: 59;
-}
+.WHorse{
 
-.PieceBB2 {
-  order: 62;
 }
 
-.PieceBH1 {
-  order: 58;
-}
+.BHorse{
 
-.PieceBH2 {
-  order: 63;
 }
 
-.PieceBT1 {
-  order: 57;
-}
+.WTower{
 
-.PieceBT2 {
-  order: 64;
 }
 
+.BTower{
 
-.PieceBP1 {
-  order: 49;
 }
 
-.PieceBP2 {
-  order: 50;
-}
+.WQueen{
 
-.PieceBP3 {
-  order: 51;
 }
 
-.PieceBP4 {
-  order: 52;
-}
+.BQueen{
 
-.PieceBP5 {
-  order: 53;
 }
 
-.PieceBP6 {
-  order: 54;
-}
+.WKing{
 
-.PieceBP7 {
-  order: 55;
 }
 
-.PieceBP8 {
-  order: 56;
-}
+.BKing{
 
-.Black{
-  background-color: aliceblue;
 }

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Löfven</title>
+    <title>Chess Game</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="Icon" href="Stefan.png" />
+    <link rel="Icon" href="Icon.png" />
     <script defer src="app.js"></script>
   </head>
   <body>
@@ -16,291 +16,451 @@
           id="PieceBT1"
           name="Piece"
           class="BTower"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BT
+          <img src="./BT.png" alt="" />
         </div>
         <div
           id="PieceBH1"
           name="Piece"
           class="BHorse"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BH
+          <img src="./BH.png" alt="">
         </div>
         <div
           id="PieceBB1"
           name="Piece"
           class="BBishop"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BB
+          <img src="./BB.png" alt="">
         </div>
         <div
           id="PieceBQ"
           name="Piece"
           class="BQueen"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BQ
+          <img src="./BQ.png" alt="">
         </div>
         <div
           id="PieceBK"
           name="Piece"
           class="BKing"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BK
+          <img src="./BK.png" alt="">
         </div>
         <div
           id="PieceBB2"
           name="Piece"
           class="BBishop"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BB
+          <img src="./BB.png" alt="">
         </div>
         <div
           id="PieceBH2"
           name="Piece"
           class="BHorse"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BH
+          <img src="./BH.png" alt="">
         </div>
         <div
           id="PieceBT2"
           name="Piece"
           class="BTower"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BT
+          <img src="./BT.png" alt="" />
         </div>
         <div
           id="PieceBP1"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
         <div
           id="PieceBP2"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
         <div
           id="PieceBP3"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
         <div
           id="PieceBP4"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
         <div
           id="PieceBP5"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
         <div
           id="PieceBP6"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
         <div
           id="PieceBP7"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
         <div
           id="PieceBP8"
           name="Piece"
           class="BPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'black' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'black'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          BP
+          <img src="./BP.png" alt="">
         </div>
 
         <div
           id="PieceWP1"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWP2"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWP3"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWP4"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWP5"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWP6"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWP7"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWP8"
           name="Piece"
           class="WPeasant"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WP
+          <img src="./WP.png" alt="">
         </div>
         <div
           id="PieceWT1"
           name="Piece"
           class="WTower"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WT
+          <img src="./WT.png" alt="" />
         </div>
         <div
           id="PieceWH1"
           name="Piece"
           class="WHorse"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WH
+          <img src="./WH.png" alt="">
         </div>
         <div
           id="PieceWB1"
           name="Piece"
           class="WBishop"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WB
+          <img src="./WB.png" alt="">
         </div>
         <div
           id="PieceWQ"
           name="Piece"
           class="WQueen"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WQ
+          <img src="./WQ.png" alt="">
         </div>
         <div
           id="PieceWK"
           name="Piece"
           class="WKing"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WK
+          <img src="./WK.png" alt="">
         </div>
         <div
           id="PieceWB2"
           name="Piece"
           class="WBishop"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true;}"
         >
-          WB
+          <img src="./WB.png" alt="">
         </div>
         <div
           id="PieceWH2"
           name="Piece"
           class="WHorse"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()}"
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WH
+          <img src="./WH.png" alt="">
         </div>
         <div
           id="PieceWT2"
           name="Piece"
           class="WTower"
-          onclick="SMove(this.id, this.className)"
+          onmousedown="if (turn == 'white' && selected){var1 = false;Death(this.id)} else if(selected){selected = false;turn = 'white'; Reload()} "
+          onmouseup="if(var1){SMove(this.id, this.className)} else{var1 = true}"
         >
-          WT
+          <img src="./WT.png" alt="" />
         </div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
-        <div class="Space"></div>
+        <div
+          class="Space"
+          id="Space17"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space18"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space19"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space20"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space21"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space22"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space23"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space24"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space25"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space26"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space27"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space28"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space29"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space30"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space31"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space32"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space33"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space34"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space35"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space36"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space37"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space38"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space39"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space40"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space41"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space42"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space43"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space44"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space45"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space46"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space47"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
+        <div
+          class="Space"
+          id="Space48"
+          onmousedown="Fill(this.getAttribute('Index'), this.id)"
+        ></div>
       </div>
     </main>
   </body>
